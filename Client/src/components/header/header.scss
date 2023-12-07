@@ -1,0 +1,157 @@
+.header {
+  background-color: rgb(0, 53, 128);
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 80px;
+
+  > .headerContainer {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    > .headerList {
+      display: flex;
+      justify-content: flex-start;
+      > .headerItems {
+        font-size: 1.2rem;
+        padding: 8px 13px;
+        > span {
+          margin-left: 10px;
+          font-size: 1.2rem;
+        }
+      }
+
+      > .headerItems:first-child {
+        border: 2px solid white;
+        padding: 8px 10px;
+        border-radius: 20px;
+      }
+
+      > .headerDesc {
+        font-weight: 100;
+      }
+    }
+
+    > .headerTitle {
+      font-size: 2.5rem;
+      padding-top: 30px;
+    }
+    > .headerDesc {
+      font-size: 1.2rem;
+    }
+
+    > .headerBtn {
+      padding: 13px 10px;
+      border: none;
+      color: white;
+      background-color: rgb(0, 113, 194);
+    }
+
+    > .headerSeacrh {
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      max-width: 1100px;
+      border: 3px solid orange;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      background-color: white;
+      align-items: center;
+      height: 60px;
+
+      > .headerSearchItem {
+        position: relative;
+        > .openOptions {
+          cursor: pointer;
+        }
+        > .headerSearchIcon {
+          font-size: 1.35rem;
+          color: rgb(195, 190, 190);
+        }
+
+        > input {
+          border: none;
+          outline: none;
+          font-size: 18px;
+          margin-left: 20px;
+          padding: 2px 6px;
+        }
+
+        > span {
+          font-size: 18px;
+          margin-left: 20px;
+          padding: 2px 6px;
+          color: rgb(195, 190, 190);
+        }
+
+        > .date {
+          position: absolute;
+          top: 40px;
+          left: 0px;
+        }
+
+        > .options {
+          background-color: white;
+          padding: 10px 10px 5px 10px;
+          font-size: 1.2rem;
+          color: grey;
+          font-weight: 500;
+          position: absolute;
+          top: 35px;
+          left: 20px;
+          border-radius: 5px;
+          -webkit-box-shadow: -1px -1px 9px -1px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -1px -1px 9px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px -1px 9px -1px rgba(0, 0, 0, 0.75);
+          > .optionItems {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+
+            > .optionClick {
+              border: 2px solid white;
+              display: flex;
+              gap: 10px;
+              justify-content: space-between;
+              align-items: center;
+              > button {
+                height: 30px;
+                width: 30px;
+
+                border: 1px solid rgba(0, 0, 255, 0.759);
+                color: rgba(0, 0, 255, 0.759);
+              }
+              > button:disabled {
+                cursor: not-allowed;
+              }
+              > .optionadd {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      > .calender {
+        cursor: pointer;
+      }
+
+      > .headerSearchBtn {
+        padding: 10px;
+        background-color: rgb(80, 137, 217);
+        border: none;
+        color: white;
+      }
+    }
+  }
+}
